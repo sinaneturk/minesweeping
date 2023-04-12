@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*################################################################################################*/
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  padding: 0.7em;
+}
+
+a {
+  text-decoration: none;
+  color: #808080c9;
+}
+
+li.active a {
+  color: orangered;
+}
+
+li.active {
+  background-color: gainsboro;
+}

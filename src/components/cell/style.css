@@ -1,0 +1,12 @@
+button.cell {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    border: none;
+}
+
+button.cell.cliked {
+    background-color: navajowhite;
+}
