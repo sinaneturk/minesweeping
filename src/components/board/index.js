@@ -1,14 +1,13 @@
 import { useSelector } from "react-redux";
 import Cell from "../cell";
-import Row from "../row";
 import './style.css'
-const  Table = () => {
+const  Board = () => {
 
-  const {numOfRows, numOfColumns, cells} = useSelector((state) => state.cell);
-  const tableWidth = numOfColumns*31;
-  console.log("T=>", tableWidth)
+  const { numOfColumns, cells} = useSelector((state) => state.cell);
+  const boardWidth = 31*numOfColumns;
+  console.log("CELL-LEN =>", cells.length)
   return (
-    <div className="table" style={{width:31*numOfColumns+"px"}}>
+    <div className="table" style={{width:boardWidth+"px"}}>
       {
         cells.map((cellItem, cellIndex) => (
           <Cell
@@ -21,4 +20,4 @@ const  Table = () => {
   );
 }
 
-export default Table;
+export default Board;

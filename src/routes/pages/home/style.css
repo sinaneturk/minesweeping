@@ -1,4 +1,6 @@
 .controller-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 5px 0;
 }

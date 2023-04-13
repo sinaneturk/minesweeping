@@ -1,4 +1,3 @@
-import { Outlet } from "react-router-dom";
 import './style.css'
 import { useDispatch, useSelector } from "react-redux";
 import { setCells } from "../../redux/slices/cell";
